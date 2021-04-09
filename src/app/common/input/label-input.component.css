@@ -1,0 +1,15 @@
+.label-input-area {
+  display: block;
+  width: 215px;
+}
+
+.input-label {
+  width: 70px;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+.component-input {
+  width: 130px;
+  margin-right: 5px;
+}

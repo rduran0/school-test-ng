@@ -1,0 +1,28 @@
+<h1>Student Navigation or something...</h1>
+
+<row>
+  <input type="radio" name="display" [value]="'hor'" [(ngModel)]="display">
+  <input type="radio" name="display" [value]="'vert'" [(ngModel)]="display">
+  <input type="radio" name="display" [value]="'full'" [(ngModel)]="display">
+</row>
+<row>
+  <select name="studentList" (change)="onSelectStudent($event)">
+    <option
+      *ngFor="let student of studentList"
+      [value]="student.value">{{student.key}}</option>
+  </select>
+</row>
+<div *ngIf="selected !== undefined">
+  <horizontal-record-card
+    *ngIf="display === 'hor'"
+    [data]="selected"
+    (cardClick)="showCurrentAge($event)"></horizontal-record-card>
+  <vertical-record-card
+    *ngIf="display === 'vert'"
+    [data]="selected"
+    (cardClick)="showCurrentAge($event)"></vertical-record-card>
+  <full-record-card
+    *ngIf="display === 'full'"
+    [data]="selected"
+    (cardClick)="showCurrentAge($event)"></full-record-card>
+</div>

@@ -1,0 +1,21 @@
+<div (click)="onClick()">
+  <span>Card Type: {{cardType}}</span>
+  <row>
+    <label-input
+      [label]="'Name'"
+      [value]="data.name"
+      [readOnly]="true"></label-input>
+  </row>
+  <row>
+    <label-input
+      [label]="'Surnames'"
+      [value]="data.firstSurname + ' ' + data.secondSurname"
+      [readOnly]="true"></label-input>
+  </row>
+  <row>
+    <label-input
+      [label]="'Birthdate'"
+      [value]="data.birthdate | birthdate"
+      [readOnly]="true"></label-input>
+  </row>
+</div>
