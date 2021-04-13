@@ -1,32 +1,62 @@
 # SchoolTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Este proyecto fue generado con Angular 9.1.7 en mente.
 
-## About demos
+## Requerimientos
 
-This branch has the most basic setup. Check what other branches are in this repo. Each branch will have more to say about it and different implementations.
-The rest of the contents of this README are the default Angular project instructions.
+Lo siguiente debe estar instalado para poder correr este proyecto en "development mode":
 
-## Development server
+* NodeJS (10.20.1 o más reciente)
+* NPM (incluído con NodeJS)
+* Yarn (opcional)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Las versiones mínimas recomendadas han sido probadas.
 
-## Code scaffolding
+## Correr "Dev Server"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Asegurate de instalar las dependencias primero:
 
-## Build
+```shell
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+El proyecto se puede correr a grandes rasgos con cualquiera de las siguientes opciones:
 
-## Running unit tests
+* Angular CLI
+```shell
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* NPM
+```shell
+npm run start
+```
 
-## Running end-to-end tests
+Para acceder a la página del servidor de desarrollo, navegar a `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Testing
 
-## Further help
+Fuera de las auto-generadas en la creación del proyecto, ninguna ha sido implementada aún (revisar BRANCHES.md).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Generar un nuevo componente
+
+Si ya tienen noción de como funciona, pueden hacerlo manualmente, de otro se recomienda usar el comando para generarlo.
+
+```shell
+
+# Componente
+ng generate component component-name
+
+# Alternativamente, también pueden usarlo para otros:
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
+
+## Más información
+
+Para saber más sobre el uso del Angular CLI pueden usar el comando:
+
+```shell
+ng help
+```
+
+También el [README oficial](https://github.com/angular/angular-cli/blob/master/README.md) provee información sobre su uso.
