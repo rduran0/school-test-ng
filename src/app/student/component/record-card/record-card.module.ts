@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { EasyContainerModule } from "src/app/common/container/easy-container.module";
 import { EasyInputModule } from "src/app/common/input/easy-input.module";
 import { UsefulPipes } from "src/app/pipe/useful-pipes.module";
@@ -16,6 +17,7 @@ import { VerticalRecordCard } from "./record-card-v.component";
   providers: [],
   imports: [
     CommonModule,
+    FormsModule,
     UsefulPipes,
     EasyInputModule,
     EasyContainerModule

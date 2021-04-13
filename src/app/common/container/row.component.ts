@@ -4,8 +4,8 @@ import { Component } from "@angular/core";
   selector: "row",
   templateUrl: "row.component.html",
   styles: [`.row {
-    display: inline;
-    width: fill;
+    display: block;
+    width: 100%;
   }`]
 })
 export class Row {}

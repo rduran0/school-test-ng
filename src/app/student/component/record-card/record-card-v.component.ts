@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnChanges, SimpleChanges } from "@angular/core";
 import { AbstractRecordCard } from "./abstract-record-card";
 
 @Component({
@@ -7,8 +7,13 @@ import { AbstractRecordCard } from "./abstract-record-card";
 })
 export class VerticalRecordCard extends AbstractRecordCard {
 
+  public disableEdit: boolean
+
+  public name: string
+
   constructor() {
     super()
     this.cardType = "Vertical"
+    this.disableEdit = true
   }
 }

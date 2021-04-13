@@ -1,6 +1,6 @@
 .label-input-area {
-  display: block;
-  width: 215px;
+  display: inline-block;
+  width: 250px;
 }
 
 .input-label {

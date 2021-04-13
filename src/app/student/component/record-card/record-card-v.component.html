@@ -1,10 +1,12 @@
 <div (click)="onClick()">
   <span>Card Type: {{cardType}}</span>
+  <label for="name-check">Enable name edit</label>
+  <input id="name-check" type="checkbox" [(ngModel)]="disableEdit" >
   <row>
     <label-input
       [label]="'Name'"
       [value]="data.name"
-      [readOnly]="true"></label-input>
+      [readOnly]="disableEdit"></label-input>
   </row>
   <row>
     <label-input
